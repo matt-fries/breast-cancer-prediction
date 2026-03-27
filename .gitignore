@@ -8,5 +8,16 @@ wheels/
 
 # Virtual environments
 .venv
+# Jupyter checkpoints
+.ipynb_checkpoints
+
+# OS files
+.DS_Store
+
 # AI folders
 .claude
+
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+uv.lock
