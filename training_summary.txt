@@ -1,0 +1,25 @@
+Training Summary — 2026-03-27 13:57:29
+==================================================
+Class weight: 1.676 (benign=285, malignant=170)
+Model config: n_estimators=100, max_depth=5, lr=0.1
+Training: Complete
+Accuracy: 0.9737
+Precision: 0.9756
+Recall: 0.9524
+F1 Score: 0.9639
+ROC-AUC: 0.9924
+Confusion matrix: TN=71, FP=1, FN=2, TP=40
+
+Classification Report:
+              precision    recall  f1-score   support
+
+      Benign       0.97      0.99      0.98        72
+   Malignant       0.98      0.95      0.96        42
+
+    accuracy                           0.97       114
+   macro avg       0.97      0.97      0.97       114
+weighted avg       0.97      0.97      0.97       114
+
+Model saved: model/model.json
+Scaler saved: model/scaler.pkl
+Feature names saved: model/feature_names.pkl (21 features)

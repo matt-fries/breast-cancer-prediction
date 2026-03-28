@@ -1,0 +1,22 @@
+Preprocessing Summary — 2026-03-27 13:57:29
+==================================================
+Load: 569 rows, 32 columns from TrainingPortion.csv
+Columns: id, diagnosis, radius_mean, texture_mean, perimeter_mean, area_mean, smoothness_mean, compactness_mean, concavity_mean, concave points_mean, symmetry_mean, fractal_dimension_mean, radius_se, texture_se, perimeter_se, area_se, smoothness_se, compactness_se, concavity_se, concave points_se, symmetry_se, fractal_dimension_se, radius_worst, texture_worst, perimeter_worst, area_worst, smoothness_worst, compactness_worst, concavity_worst, concave points_worst, symmetry_worst, fractal_dimension_worst
+Dtypes: {dtype('float64'): 30, dtype('int64'): 1, dtype('O'): 1}
+Drop column: Removed 'id' column
+Shape after drop: (569, 31)
+Missing values: 0 total
+Duplicate rows: 0
+Diagnosis before encoding: {'B': 357, 'M': 212}
+Diagnosis after encoding: {0: 357, 1: 212}
+Class balance: 37.3% malignant, 62.7% benign
+Dropped redundant features: 9 columns: perimeter_mean, area_mean, perimeter_se, area_se, perimeter_worst, area_worst, concave points_mean, texture_mean, concave points_worst
+Features: 21 columns
+Feature list: radius_mean, smoothness_mean, compactness_mean, concavity_mean, symmetry_mean, fractal_dimension_mean, radius_se, texture_se, smoothness_se, compactness_se, concavity_se, concave points_se, symmetry_se, fractal_dimension_se, radius_worst, texture_worst, smoothness_worst, compactness_worst, concavity_worst, symmetry_worst, fractal_dimension_worst
+Train set: 455 samples (80.0%)
+Test set: 114 samples (20.0%)
+Train class balance: 37.4% malignant
+Test class balance: 36.8% malignant
+Scaling verify (train): mean range [0.0000, 0.0000], std range [1.0011, 1.0011]
+High correlation pairs (r > 0.9): 1 found
+  Corr pair: radius_worst <-> radius_mean = 0.969
