@@ -21,3 +21,4 @@ wheels/
 __pycache__/
 *.pyc
 uv.lock
+*.zip
